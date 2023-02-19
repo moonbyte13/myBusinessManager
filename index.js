@@ -29,7 +29,7 @@ function init() {
       choices: commands
     }
   ])
-  .then((answers) => {
+  .then(async (answers) => {
     if(answers.command === 'View All Departments'){
       view_all_depts();
       return;
@@ -59,10 +59,10 @@ function init() {
       return;
     }
   })
-  .then(async () => {
+  /* .then(async () => {
     await resolveDelayed()
     .then(() => init())
-  })
+  }) */
   .catch((err) => {
     console.error(err);
   });
