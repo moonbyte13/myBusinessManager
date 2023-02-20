@@ -81,10 +81,10 @@ function init() {
       return;
     }
   })
-  /* .then(async () => {
+  .then(async () => {
     await resolveDelayed()
     .then(() => init())
-  }) */
+  })
   .catch((err) => {
     console.error(err);
   });
