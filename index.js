@@ -16,7 +16,9 @@ const commands = [
   'Add a Department',
   'Add a Role',
   'Add an Employee',
-  'Update an Employee Role'
+  'Update an Employee Role',
+  'Quit'
+
 ]
 
 function log() {
@@ -90,6 +92,13 @@ function init() {
       case 'Update an Employee Role':
         update_emp_role();
         break
+      
+      case 'Quit':
+        console.log(`
+█▀▀ █▀█ █▀█ █▀▄ █▄▄ █▄█ █▀▀ █
+█▄█ █▄█ █▄█ █▄▀ █▄█ ░█░ ██▄ ▄
+`);
+        process.exit();
     }
   })
   .then(async () => {
