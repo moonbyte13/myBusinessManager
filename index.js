@@ -86,7 +86,7 @@ function init() {
         break;
 
       case 'Add an Employee':
-        add_emp();
+        await add_emp();
         break;
 
       case 'Update an Employee Role':
