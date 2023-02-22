@@ -1,5 +1,5 @@
 
-# 09 Node.js Challenge: Professional README Generator
+# 12 SQL: Employee Tracker
 
 ## Badges 📛
 [![](https://img.shields.io/static/v1?label=License&message=MIT+License&color=blueviolet)](#licence)
@@ -59,8 +59,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 * What is the Repo link?
   * [Repo](https://github.com/moonphase13/myBusinessManager)
 * What is the link to the Demo Video?
-  <!-- * [Demo](https://youtu.be/8cyL84Q99wc) -->
-  * Coming Soon
+  * [Demo](https://drive.google.com/file/d/1mTat7WW4mSdTrgADX_N5S1aUoVzTyLIm/view?usp=sharing)
 * What is your Github link?
   * [Github](https://github.com/XMoonphaseX)
 
