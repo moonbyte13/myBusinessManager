@@ -57,9 +57,9 @@ THEN I am prompted to select an employee to update and their new role and this i
 ## FAQ 	❓
 
 * What is the Repo link?
-  * [Repo](https://github.com/moonphase13/myBusinessManager)
+  * <a href='https://github.com/moonphase13/myBusinessManager' target='_blank'>***Repo***</a>
 * What is the link to the Demo Video?
-  * [Demo](https://drive.google.com/file/d/1mTat7WW4mSdTrgADX_N5S1aUoVzTyLIm/view?usp=sharing)
+  * <a href='https://drive.google.com/file/d/1mTat7WW4mSdTrgADX_N5S1aUoVzTyLIm/view?usp=sharing/' target='_blank'>***Demo***</a>
 * What is your Github link?
-  * [Github](https://github.com/XMoonphaseX)
+  * <a href='https://github.com/moonphase13' target='_blank'>***Github***</a>
 
