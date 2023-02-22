@@ -1,6 +1,9 @@
+// import inquirer
 const inquirer = require('inquirer');
+// import console table
 const cTable = require('console.table');
 
+// import all my commands
 const view_all_depts = require('./lib/commands/view_all_depts');
 const view_all_emp = require('./lib/commands/view_all_emp');
 const view_all_roles = require('./lib/commands/view_all_roles');
@@ -13,6 +16,7 @@ const deleteDept = require('./lib/commands/delete_dept')
 const deleteRole = require('./lib/commands/delete_role')
 const deleteEmp = require('./lib/commands/delete_emp')
 
+// array of all commands for the prompt
 const commands = [
   'View All Departments',
   'View All Roles',
@@ -29,7 +33,8 @@ const commands = [
 
 ]
 
-function log() {
+// Function welcome
+function welcomeLog() {
   console.log(`
 +-----------------------------------------------------------------------------------------------+
 |                                                                                               |
@@ -60,8 +65,9 @@ function log() {
 `);
 }
 
+// inital startup function
 function init() {
-
+  // main inquirer prompt
   inquirer
   .prompt([
     {
@@ -72,6 +78,7 @@ function init() {
     }
   ])
   .then(async (answers) => {
+    // switch case for controlling what to do
     switch (answers.command) {
       case 'View All Departments':
         view_all_depts();
@@ -126,6 +133,7 @@ function init() {
     }
   })
   .then(async () => {
+    // await the promise delay before running init (allows for tables to print before running init)
     await resolveDelayed()
     .then(() => init())
   })
@@ -134,6 +142,7 @@ function init() {
   });
 }
 
+// function to create a promise delay for 250 ms
 function resolveDelayed() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -142,5 +151,5 @@ function resolveDelayed() {
   });
 }
 
-log();
+welcomeLog();
 init();
