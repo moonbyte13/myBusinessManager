@@ -90,7 +90,7 @@ function init() {
         break;
 
       case 'Update an Employee Role':
-        update_emp_role();
+        await update_emp_role();
         break
       
       case 'Quit':
