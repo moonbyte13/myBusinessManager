@@ -10,6 +10,7 @@ const add_role = require('./lib/commands/add_role');
 const update_emp_role = require('./lib/commands/update_emp_role');
 const update_emp_manager = require('./lib/commands/update_emp_manager');
 const deleteDept = require('./lib/commands/delete_dept')
+const deleteRole = require('./lib/commands/delete_role')
 
 const commands = [
   'View All Departments',
@@ -21,6 +22,7 @@ const commands = [
   'Update an Employee Role',
   'Update an Employee Manager',
   'Delete a Department',
+  'Delete a Role',
   'Quit'
 
 ]
@@ -105,6 +107,10 @@ function init() {
         await deleteDept();
         break
     
+      case 'Delete a Role':
+      await deleteRole();
+      break
+  
       case 'Quit':
         console.log(`
 █▀▀ █▀█ █▀█ █▀▄ █▄▄ █▄█ █▀▀ █
